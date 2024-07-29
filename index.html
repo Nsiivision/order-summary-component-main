@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+.container{
+  background: url(./images/pattern-background-desktop.svg) no-repeat;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.box-in-tainer{
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.header{
+  height: 220px;
+  background: url(./images/illustration-hero.svg);
+  
+}
+
+.radio{
+  background-color: white;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 10px;
+  align-items: center;
+  border-radius: 2px;
+  border-radius: 0 0 10px 10px;
+
+}
+.Order{
+padding: 10px;
+font-size: 1.5rem;
+}
+.paragraph{
+  color: rgba(0, 0, 0, 0.438);
+  text-align: center;
+  font-size: 16px;
+
+}
+
+.annual{
+background-color: hsl(225, 100%, 98%);
+margin: 20px;
+padding: 10px 20px;
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+.icon-plan{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+}
+
+.Change{
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.Proceed{
+  background-color: hsl(245, 75%, 52%);
+  width: 100%;
+  padding: 15px;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+
+}
+button{
+margin: 10px;
+color: rgba(0, 0, 0, 0.375);
+padding: 5px;
+background-color: transparent;
+border: none;
+cursor: pointer;
+
+}
+
+
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <section class="box-in-tainer">
+      <div class="header"></div>
+      <div class="radio">
+
+        <h3 class="Order">Order Summary</h3>
+
+        <p class="paragraph">
+          you can now listen to millions of songs, audiobooks, and podcasts on any
+          device anywhere you like!
+
+        </p>
+        <div class="annual">
+          <div class="icon-plan">
+          <img src="./images/icon-music.svg" alt="">
+          <div class="plan">
+            <h5>
+              Annual Plan
+            </h5>
+            <small class="paragraph">
+              $59.99/year
+            </small>
+          </div>
+          </div>
+          <h5 class="Change">
+            Change
+          </h5>
+        </div>
+
+        <div class="Proceed">
+          Proceed to Payment
+        </div>
+        <button>
+          Cancel Order
+        </button>
+      </div>
+
+
+
+
+
+
+
+
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
